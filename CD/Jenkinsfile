@@ -16,8 +16,7 @@ options {
 
         stage('Login'){
             steps{
-                // sh 'docker login -u $DOCKERHUB_CREDS -p $DOCKERHUB_CREDS_PSW'
-                sh 'docker login -u liaox1 -p 7945685213'
+                sh 'docker login -u $DOCKERHUB_CREDS -p $DOCKERHUB_CREDS_PSW'
                 }
             }
 
